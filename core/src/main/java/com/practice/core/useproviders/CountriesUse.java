@@ -12,6 +12,7 @@ public class CountriesUse extends WCMUse {
 	@Override
 	public void activate() throws Exception {
 		
+		
 		Country india = new Country("India", "Delhi");
 		Country england = new Country("England", "London");
 		

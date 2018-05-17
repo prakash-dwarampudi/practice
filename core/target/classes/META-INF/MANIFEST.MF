@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1526378887904
+Bnd-LastModified: 1526532983579
 Build-Jdk: 1.8.0_25
 Built-By: sri.dwarampudi
 Bundle-Description: Core bundle for practice
@@ -8,10 +8,32 @@ Bundle-Name: practice - Core
 Bundle-SymbolicName: com.practice.core
 Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: com.practice.core;version="1.0",com.practice.core.usepro
- viders;uses:="com.adobe.cq.sightly";version="0.0.1"
-Import-Package: com.adobe.cq.sightly;version="[2.2,3)",org.apache.sling.
- api.resource;version="[2.5,3)",javax.inject;version="0.0.0"
+Export-Package: com.practice.core.adapters;uses:="org.apache.sling.api.a
+ dapter";version="0.0.1",com.practice.core;version="1.0",com.practice.co
+ re.slingmodels.collections;uses:="org.apache.sling.api.resource,org.apa
+ che.sling.models.annotations";version="0.0.1",com.practice.core.slingmo
+ dels.constinj;uses:="javax.inject,org.apache.sling.api.resource,org.apa
+ che.sling.models.annotations";version="0.0.1",com.practice.core.slingmo
+ dels;uses:="org.apache.sling.api.resource,org.apache.sling.models.annot
+ ations";version="0.0.1",com.practice.core.slingmodels.interfaceexample;
+ uses:="javax.inject,org.apache.sling.api.resource,org.apache.sling.mode
+ ls.annotations";version="0.0.1",com.practice.core.slingmodels.optional;
+ uses:="org.apache.sling.api.resource,org.apache.sling.models.annotation
+ s";version="0.0.1",com.practice.core.slingmodels.viademo;uses:="javax.a
+ nnotation,org.apache.sling.api,org.apache.sling.models.annotations";ver
+ sion="0.0.1",com.practice.core.useproviders;uses:="com.adobe.cq.sightly
+ ,com.practice.core.adapters,com.practice.core.slingmodels";version="0.0
+ .1"
+Import-Package: com.adobe.cq.sightly;version="[2.2,3)",com.day.cq.wcm.ap
+ i;version="[1.2,2)",javax.annotation,javax.inject;version="[1.0,2)",org
+ .apache.sling.api;version="[2.3,3)",org.apache.sling.api.adapter;versio
+ n="[2.2,3)",org.apache.sling.api.resource;version="[2.5,3)",org.apache.
+ sling.api.scripting;version="[2.1,3)",org.apache.sling.models.annotatio
+ ns;version="[1.0,2)",org.apache.sling.models.factory;version="[1.1,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="org.apac
+ he.sling.api.adapter.AdapterFactory";service.vendor=Adobe
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/com.practice.core.adapters.BasicPropertiesAd
+ apter.xml
 Sling-Model-Packages: com.practice.core
 Tool: Bnd-2.3.0.201405100607

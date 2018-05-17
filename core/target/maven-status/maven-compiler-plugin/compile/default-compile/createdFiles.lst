@@ -1,4 +1,14 @@
+com\practice\core\useproviders\BasePropsUse.class
 com\practice\core\useproviders\CountriesUse.class
-com\practice\core\package-info.class
+com\practice\core\adapters\BasicPropertiesAdapter.class
+com\practice\core\slingmodels\constinj\ContactModel.class
+com\practice\core\slingmodels\interfaceexample\ContactModel.class
+com\practice\core\slingmodels\viademo\ContactModel.class
+com\practice\core\slingmodels\optional\ContactModel.class
 com\practice\core\useproviders\Country.class
 com\practice\core\useproviders\SampleUse.class
+com\practice\core\package-info.class
+com\practice\core\slingmodels\ContactModel.class
+com\practice\core\useproviders\ContactUse.class
+com\practice\core\slingmodels\collections\ContactModel.class
+com\practice\core\adapters\BasicProperties.class
