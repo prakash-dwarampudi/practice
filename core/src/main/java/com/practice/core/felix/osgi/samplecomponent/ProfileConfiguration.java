@@ -23,10 +23,15 @@ public class ProfileConfiguration {
 	private static final String GENDER = "user.gender";
 	private String gender;
 	
+	@Property(name ="Admin", description="Is Admin User", label="Is Admin", boolValue=false)
+	private static final String IS_ADMIN  = "is.admin";
+	private Boolean isAdmin;
+	
 	protected void activate(Map<String, Object> props){
 		this.username = (String) props.get(USER_NAME);
 		this.password  = (String) props.get(PASSWORD);
 		this.gender = (String) props.get(GENDER);
+		this.isAdmin = (Boolean) props.get(IS_ADMIN);
 	}
 
 }

@@ -27,7 +27,11 @@ sling model example
 </sly> -->
 
 
-<sly data-sly-use.contact="${'com.practice.core.slingmodels.viademo.ContactModel'}">
+<!--  <sly data-sly-use.contact="${'com.practice.core.slingmodels.viademo.ContactModel'}">
 	${contact.username} <br/>
+	${contact.email} <br/>
+</sly>-->
+
+<sly data-sly-use.contact="${'com.practice.core.slingmodels.source.ContactModel'}">
 	${contact.email} <br/>
 </sly>

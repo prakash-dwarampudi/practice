@@ -5,8 +5,10 @@ import java.util.Map;
 import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Property;
+import org.osgi.service.component.ComponentContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 @Component(name = "Sample Component", immediate = true, metatype = true)
 public class SampleComponent {
@@ -17,7 +19,7 @@ public class SampleComponent {
 	private String name = "user.name";
 
 	@Activate
-	public void activate(Map<String, Object> properties) {
+	public void activate(Map<String, Object> properties, ComponentContext ctx) {
 		LOG.info("Sample Componenet :"+ properties.get("user.name"));
 	}
 
