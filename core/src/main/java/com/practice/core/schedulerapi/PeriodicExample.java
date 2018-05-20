@@ -31,7 +31,7 @@ public class PeriodicExample {
 			}
 		};
 		try {
-			scheduler.addPeriodicJob("Periodic-Job", job, new HashMap<String, Serializable>(), 10, false);
+		//	scheduler.addPeriodicJob("Periodic-Job", job, new HashMap<String, Serializable>(), 10, false);
 		} catch (Exception e) {
 			job.run();
 		}
