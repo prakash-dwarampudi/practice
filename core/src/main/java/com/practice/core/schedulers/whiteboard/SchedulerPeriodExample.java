@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 @Component
 @Service(value = Runnable.class)
-@Property(name = "scheduler.period",  longValue=10)
+//@Property(name = "scheduler.period",  longValue=10)
 public class SchedulerPeriodExample implements Runnable {
 
 	private static final Logger LOG = LoggerFactory.getLogger(SchedulerPeriodExample.class);
