@@ -28,7 +28,7 @@ public class VersionHistoryServlet extends SlingSafeMethodsServlet{
 			Session session = request.getResourceResolver().adaptTo(Session.class);
 			VersionManager vm = session.getWorkspace().getVersionManager();
 			VersionHistory versionHistory = vm.getVersionHistory(path);
-			VersionIterator vItr = versionHistory.getAllVersions();
+ 			VersionIterator vItr = versionHistory.getAllVersions();
 			while(vItr.hasNext()){
 				Version version = vItr.nextVersion();
 				String name = version.getName();

@@ -8,7 +8,7 @@ import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.commons.osgi.PropertiesUtil;
 
-@Component(name = "DB Configuration Factory", immediate = true, metatype = true, configurationFactory=true)
+@Component(name = "DB Configuration Factory", immediate = true, metatype = false, configurationFactory=true)
 @Service(value=DatabaseConfig.class)
 public class DatabaseConfigFactory implements DatabaseConfig{
 
