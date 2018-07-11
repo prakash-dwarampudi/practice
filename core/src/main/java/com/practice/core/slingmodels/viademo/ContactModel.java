@@ -1,14 +1,10 @@
 package com.practice.core.slingmodels.viademo;
 
-import java.util.List;
-
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.Source;
 import org.apache.sling.models.annotations.Via;
 
 @Model(adaptables = SlingHttpServletRequest.class)
